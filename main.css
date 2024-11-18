@@ -63,7 +63,35 @@
 }
 .main-part-header{
     position: absolute;
+    top: 10%;
+    left: 20%;
+    font-size: 36px;
 }
 .main-part section{
     padding: 50px;
+}
+.buttons-n-input-wrapper{
+    padding: 50px;
+}
+.input-container{
+    border: 1px solid black;
+    height: 100px;
+    padding: 20px;
+}
+.input-container input{
+    outline: none;
+    height: 80%;
+    font-size: 30px;
+    font-weight: 900;
+    /* border: none; */
+}
+.buttons-container{
+    height: 30px;
+    width: 260px;
+}
+.buttons-container button{
+    height: 100%;
+    margin: 0;
+    width: 20%;
+    margin-right: -2%;
 }
