@@ -51,4 +51,19 @@
     border: none;
     background: #fff;
     border-radius: 5px;
+    cursor: pointer;
+}
+.main-part{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-part-header{
+    position: absolute;
+}
+.main-part section{
+    padding: 50px;
 }
