@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     font-family: "Roboto";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     width: 100vw;
     height: 100vh;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,24 +24,24 @@
     height: 10%;
     background: rgba(211, 211, 211, 0.189);
 }
-.logo-container{
 
-}
-.logo-container .bank-logo{
+.logo-container {}
 
-}
-.navbar-container{
+.logo-container .bank-logo {}
 
-}
-.navbar-container .navbar .nav-ul{
+.navbar-container {}
+
+.navbar-container .navbar .nav-ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
-.navbar-container .navbar .nav-ul li:first-child{
+
+.navbar-container .navbar .nav-ul li:first-child {
     color: black;
 }
-.navbar-container .navbar .nav-ul li{
+
+.navbar-container .navbar .nav-ul li {
     padding: 5px;
     margin-left: 5px;
     margin-right: 5px;
@@ -46,14 +49,16 @@
     color: gray;
     font-weight: 500;
 }
-.login-button{
+
+.login-button {
     padding: 6px 10px;
     border: none;
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
-.main-part{
+
+.main-part {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -61,35 +66,56 @@
     align-items: center;
     height: 100vh;
 }
-.main-part-header{
+
+.main-part-header {
     position: absolute;
     top: 10%;
     left: 20%;
     font-size: 36px;
 }
-.main-part section{
+
+.main-part section {
     padding: 50px;
 }
-.buttons-n-input-wrapper{
+
+.buttons-n-input-wrapper {
     padding: 50px;
+    width: 500px;
 }
-.input-container{
+
+.input-container {
     border: 1px solid black;
     height: 100px;
     padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 57.5vh;
 }
-.input-container input{
+
+.input-container input {
     outline: none;
-    height: 80%;
+    height: 100%;
     font-size: 30px;
     font-weight: 900;
-    /* border: none; */
+    border: none;
 }
-.buttons-container{
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.buttons-container {
     height: 30px;
-    width: 260px;
+    width: 75.5vh;
+    margin-bottom: 30px;
 }
-.buttons-container button{
+
+.buttons-container button {
     height: 100%;
     margin: 0;
     width: 20%;
