@@ -3,12 +3,23 @@
     font-family: "Roboto";
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .wrapper{
+    width: 100vw;
+    height: 100vh;
 }
 .header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 10%;
+    background: rgba(211, 211, 211, 0.189);
 }
 .logo-container{
 
@@ -23,5 +34,21 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+}
+.navbar-container .navbar .nav-ul li:first-child{
+    color: black;
+}
+.navbar-container .navbar .nav-ul li{
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: gray;
+    font-weight: 500;
+}
+.login-button{
+    padding: 6px 10px;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
 }
