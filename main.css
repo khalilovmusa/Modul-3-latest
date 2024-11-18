@@ -76,6 +76,7 @@
 
 .main-part section {
     padding: 50px;
+    position: relative;
 }
 
 .buttons-n-input-wrapper {
@@ -84,8 +85,8 @@
 }
 
 .input-container {
-    border: 1px solid black;
-    height: 100px;
+    border: 2px solid lightgray;
+    height: 10rem;
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -93,6 +94,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 57.5vh;
+    border-radius: 5px;
 }
 
 .input-container input {
@@ -101,6 +103,7 @@
     font-size: 30px;
     font-weight: 900;
     border: none;
+    margin-bottom: 20px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -110,14 +113,41 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .buttons-container {
-    height: 30px;
+    height: 38px;
     width: 75.5vh;
     margin-bottom: 30px;
 }
 
-.buttons-container button {
+.buttons-container button:first-child,
+.buttons-container button:nth-child(2),
+.buttons-container button:nth-child(3),
+.buttons-container button:last-child{
     height: 100%;
     margin: 0;
     width: 20%;
     margin-right: -2%;
+    cursor: pointer;
+
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    color: lightgray;
+
+}
+.button-selected{
+    background-color: #833AE0;
+    color: #fff;
+}
+.info{
+    margin-bottom: 10px;
+    color: lightgray;
+    font-size: 15px;
+    font-weight: 500;
+}
+.buttons-section-text{
+    position: absolute;
+    left: 17%;
+    top: 15%;
+    color: lightgray;
+    font-size: 14px;
+    font-weight: 500px;
 }
