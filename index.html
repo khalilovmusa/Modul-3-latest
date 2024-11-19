@@ -11,6 +11,11 @@
 
 <body>
     <div class="wrapper">
+        <div id="error-message" class="">
+            <span class="error-icon">⚠️</span>
+            <p class="error-text">Oops! Something went wrong. Please check your internet connection or try again later.
+            </p>
+        </div>
         <header class="header">
             <div class="logo-container">
                 <img class="bank-logo" alt="bank_logo" src="icons/bank-logo.svg">
@@ -40,13 +45,13 @@
                 <p class="buttons-section-text">У меня есть </p>
                 <div class="buttons-n-input-wrapper">
                     <div class="left-side-buttons-container buttons-container">
-                        <button class="rub-button button-selected" id="rub">RUB</button>
-                        <button class="usd-button" id="usd">USD</button>
-                        <button class="eur-button" id="eur">EUR</button>
-                        <button class="gbp-button" id="gbp">GBP</button>
+                        <button class="rub-button button" id="rub">RUB</button>
+                        <button class="usd-button button" id="usd">USD</button>
+                        <button class="eur-button button" id="eur">EUR</button>
+                        <button class="gbp-button button" id="gbp">GBP</button>
                     </div>
                     <div class="left-side-input-container input-container">
-                        <input type="number" class="">
+                        <input type="number" class="left-side-input">
                         <p class="left-side-currency-info info">1 USD ~ 500 RUB</p>
                     </div>
                 </div>
@@ -55,13 +60,13 @@
                 <p class="buttons-section-text">Хочу приобрести</p>
                 <div class="buttons-n-input-wrapper">
                     <div class="right-side-buttons-container buttons-container">
-                        <button class="rub-button" id="rub">RUB</button>
-                        <button class="usd-button button-selected" id="usd">USD</button>
-                        <button class="eur-button" id="eur">EUR</button>
-                        <button class="gbp-button" id="gbp">GBP</button>
+                        <button class="rub-button button" id="rub">RUB</button>
+                        <button class="usd-button button" id="usd">USD</button>
+                        <button class="eur-button button" id="eur">EUR</button>
+                        <button class="gbp-button button" id="gbp">GBP</button>
                     </div>
                     <div class="right-side-input-container input-container">
-                        <input type="number" class="">
+                        <input type="number" class="right-side-input">
                         <p class="right-side-currency-info info">1 RUB ~ 500 USD</p>
                     </div>
                 </div>
@@ -71,6 +76,7 @@
 
 
     <script src="script.js"></script>
+    <script src="button-colors.js"></script>
 </body>
 
 </html>
