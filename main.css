@@ -25,12 +25,6 @@
     background: rgba(211, 211, 211, 0.189);
 }
 
-.logo-container {}
-
-.logo-container .bank-logo {}
-
-.navbar-container {}
-
 .navbar-container .navbar .nav-ul {
     list-style-type: none;
     display: flex;
@@ -64,7 +58,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 30vw;
 }
 
 .main-part-header {
@@ -75,8 +69,10 @@
 }
 
 .main-part section {
+    width: 500px;
     padding: 50px;
     position: relative;
+    display:block;
 }
 
 .buttons-n-input-wrapper {
@@ -121,7 +117,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .buttons-container button:first-child,
 .buttons-container button:nth-child(2),
 .buttons-container button:nth-child(3),
-.buttons-container button:last-child{
+.buttons-container button:last-child {
     height: 100%;
     margin: 0;
     width: 20%;
@@ -133,17 +129,20 @@ input[type="number"]::-webkit-outer-spin-button {
     color: lightgray;
 
 }
-.selected{
+
+.selected {
     background-color: #833AE0;
     color: #fff;
 }
-.info{
+
+.info {
     margin-bottom: 10px;
     color: lightgray;
     font-size: 15px;
     font-weight: 500;
 }
-.buttons-section-text{
+
+.buttons-section-text {
     position: absolute;
     left: 17%;
     top: 15%;
@@ -176,4 +175,69 @@ input[type="number"]::-webkit-outer-spin-button {
 .error-text {
     margin: 0;
     text-align: center;
+}
+
+.hamburger-menu-dropdown {
+    display: none;
+}
+
+.hamburger-menu-icon{
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    .navbar-container .navbar .nav-ul li {
+        padding: 3px;
+        margin-left: 2px;
+        margin-right: 2px;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .login-button {
+        padding: 3px 5px;
+        border-radius: 2px;
+    }
+
+    .bank-logo {
+        width: 60px;
+    }
+
+    .main-part {
+        padding-top: 50%;
+        flex-direction: column;
+    }
+
+    .main-part section {
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    .buttons-section-text {
+        top: 10%;
+        left: 11%;
+    }
+
+    .main-part-header {
+        top: 15%;
+        left: 13%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-part{
+        padding-top: 80%;
+    }
+    .navbar-container {
+        display: none;
+    }
+
+    .login-button-container {
+        display: none;
+    }
+    .hamburger-menu-icon{
+        display: block;
+    }
 }
